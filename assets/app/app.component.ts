@@ -21,5 +21,9 @@ import { Message } from './messages/message.model';
     `]
 })
 export class AppComponent {
-    message: Message = new Message('Some message', 'Olivier');
+    messages: Message[] = [
+        new Message('First message', 'Olivier'),
+        new Message('Second message', 'Marie'),
+        new Message('Third message', 'Alexandre')
+        ];
 }
